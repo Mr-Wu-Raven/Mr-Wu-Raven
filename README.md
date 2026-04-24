@@ -76,7 +76,4 @@
 
 <hr style="border-color:#D4B87833;">
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/sun0225SUN/assets/images/coding.gif" width="380">
-</p>
 <h4 align="center" style="color:#D4B878;font-style:italic;margin:8px 0;">寒灯独照，孤影自行 · 岁岁无归，风月为伴</h4>
