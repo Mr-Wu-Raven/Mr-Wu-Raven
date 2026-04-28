@@ -1,11 +1,11 @@
-<!-- 顶部高阶炫酷古风Banner｜优化动画+高级诗句轮播｜暖金专属配色 -->
+<!-- 顶部高阶古风Banner｜海量打乱混排短句 + 丝滑动画｜暖金专属配色 -->
 <h1 align="center">
   <a href="https://github.com/Mr-Wu-Raven">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=650&size=32&duration=3500&pause=2000&color=D4B878&center=true&vCenter=true&width=720&height=65&lines=寒灯栖瘦影·霜风叩破扉;孤鸿沉远渚·残月照荒陂;一剑倾山海·孤酒渡尘微;半生皆寥落·一世尽清狂;山河无归处·风月作归期;执笔描霜雪·纵马赴天涯" alt="高级古风打字标语">
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=650&size=30&duration=3200&pause=1800&color=D4B878&center=true&vCenter=true&width=780&height=65&lines=残月照荒陂;一剑一酒·独走江湖;山河皆过客·风月是归途;霜锁寒阶，云埋远津;一琴一剑，踏破红尘;冷月照尽天涯路;此生甘作飘零客;风过千山无归意;孤鸿沉远渚·残月照荒陂;诗写千山月，酒斟一樽秋;灯烬更阑，酒寒愁殷;山河万里皆孤旅;风月从来皆薄幸;以霜为衣，以夜为庐;半生寥落，一世狂真;千山独行，不必相送;寒灯栖瘦影·霜风叩破扉;青山不问归途远;星沉旧约，露泣孤身;风残旧诺，月冷孤心;山远云寒，旧梦已散;月冷千山，我自独行;笔底藏山河，杯中藏九州;霜风叩破扉，空山咽断笛;孤影临风，独对星辰;诗酒寄浮生，孤行任遨游;雁没沧波，笛怨孤村;一身风霜，半世疏狂;云埋天外枝，愁鬓染霜丝;风凋阶前叶，寒烟封古渡" alt="古风混排打字标语">
   </a>
 </h1>
 
-<!-- 访客统计 & 古风专属徽章｜深棕暖金高阶改造 -->
+<!-- 访客统计 & 古风专属徽章 -->
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Mr-Wu-Raven.Mr-Wu-Raven" alt="访客计数">
   <img src="https://img.shields.io/github/followers/Mr-Wu-Raven?color=D4B878&label=云客&style=flat-square">
@@ -13,7 +13,14 @@
   <img src="https://img.shields.io/badge/风骨-孤绝清冷-A67C52?style=flat-square">
 </p>
 
-<hr style="border: 0.5px solid #D4B87833;margin:24px 0;">
+<hr style="border: 0.5px solid #D4B87833;margin:20px 0;">
+
+<!-- 一言 随机文案模块 -->
+<div align="center" style="padding:10px 0;">
+  <div style="color:#D4B878;font-style:italic;font-size:15px;" id="hitokoto">✨ 古风一言 · 加载中...</div>
+</div>
+
+<hr style="border: 0.5px solid #D4B87833;margin:20px 0;">
 
 ### 🌙 <i style="color:#D4B878;">关于我</i>
 - <i style="color:#D4B878;">🔹 偏爱清冷古风，落笔皆霜雪，字字尽孤凉</i>
@@ -102,7 +109,19 @@
 
 <hr style="border: 0.5px solid #D4B87833;margin:30px 0;">
 
-<!-- 多层高阶诗意落款｜层级配色区分 高级感拉满 -->
+<!-- 多层高阶诗意落款 -->
 <h4 align="center" style="color:#D4B878;font-style:italic;margin:10px 0;font-weight:500;">寒灯独照，孤影自行 · 岁岁无归，风月为伴</h4>
 <h5 align="center" style="color:#B8955A;font-style:italic;margin:8px 0;font-weight:400;">山河万里皆孤旅，笔墨半生尽清寒</h5>
 <p align="center" style="color:#A67C52;font-style:italic;font-size:14px;margin:6px 0;letter-spacing:2px;">执笔叙风雪 · 孤行赴山河</p>
+
+<!-- 一言JS 随机加载 -->
+<script>
+fetch('https://v1.hitokoto.cn/')
+.then(res=>res.json())
+.then(data=>{
+  document.getElementById('hitokoto').innerText = `「${data.hitokoto}」—— ${data.from}`;
+})
+.catch(()=>{
+  document.getElementById('hitokoto').innerText = `✨ 寒寂风月 · 孤影人间`;
+})
+</script>
